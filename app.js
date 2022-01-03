@@ -22,7 +22,9 @@ form.addEventListener('submit', async function(evt){
 form.reset();
 
 const button = document.getElementById('remove');
-
+button.addEventListener('click', function(){
+  section.innerHTML = '';
+});
 
 
             
