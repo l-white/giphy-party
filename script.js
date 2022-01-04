@@ -10,7 +10,7 @@ form.addEventListener('submit', async function(event){
   event.preventDefault();
   const input = document.getElementById('search').value;
   input.value = "";
-  const res = await axios.get(`http://api.giphy.com/v1/gifs/search`, {
+  const res = await axios.get(`https://api.giphy.com/v1/gifs/search`, {
     params: {
       q: input,
       api_key: "UcA2QBIbWiL3tNbfNPwZjXRQvpQKZeFg"
